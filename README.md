@@ -8,7 +8,6 @@ Personal site for Tunde Yakub. Plain static HTML, CSS and a little JavaScript. N
 - `styles.css` — design tokens at the top (`:root`), then sections, then responsive rules
 - `script.js` — Porto clock, mobile menu, reveal-on-scroll
 - `favicon.svg`
-- `cv.pdf` — not included yet; drop your CV here (the footer links to it)
 
 ## Run locally
 
