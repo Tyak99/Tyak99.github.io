@@ -99,10 +99,16 @@
     <section class="work section" id="work">
       <div class="work-head">
         <h2>Selected work</h2>
-        <p class="mono muted">01 — 08</p>
+        <ul class="legend mono" aria-label="Groups">
+          <li><a href="#with-teams">With teams</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#tools">Tools</a></li>
+        </ul>
       </div>
 
-      <div class="featured">
+      <div class="group" id="with-teams">
+        <div class="group-head"><p class="eyebrow mono">With teams</p></div>
+        <div class="featured">
         <article class="card reveal">
           <div class="card-meta mono"><span>01 · Retail group</span><span>2026</span></div>
           <svg class="diagram" viewBox="0 0 560 200" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
@@ -137,45 +143,81 @@
           <ul class="tags mono"><li>Node</li><li>MongoDB · Redis</li><li>AWS ECS · Lambda</li></ul>
         </article>
       </div>
+        <ol class="work-list" start="3">
+        <li class="work-row reveal">
+          <a href="#work">
+            <span class="mono muted">03</span>
+            <h3>Townhall</h3>
+            <p>Founding engineer, then technical lead of six. Took the concept to the Zoom app marketplace and shipped LLM-powered features like smart agendas.</p>
+            <span class="mono muted right">2021 — now</span>
+          </a>
+        </li>
+        <li class="work-row reveal">
+          <a href="#work">
+            <span class="mono muted">04</span>
+            <h3>Marks / Hedge Market</h3>
+            <p>Real-time perpetuals trading on Arbitrum. A WebSocket price layer over three feeds, positions, P&amp;L, liquidation monitoring; GMX v2 and Ostium on-chain.</p>
+            <span class="mono muted right">Contract</span>
+          </a>
+        </li>
+        <li class="work-row reveal">
+          <a href="#work">
+            <span class="mono muted">05</span>
+            <h3>Jackocoins</h3>
+            <p>A crypto exchange that started on WhatsApp. We built the mobile, web and admin apps; by 2021 users were moving over ₦50M a day through it.</p>
+            <span class="mono muted right">2020 — 21</span>
+          </a>
+        </li>
+        </ol>
+      </div>
 
-      <ol class="work-list" start="3">
+      <div class="group" id="products">
+        <div class="group-head"><p class="eyebrow mono">Products I own</p><p class="group-intro">Businesses I build and run myself.</p></div>
+        <ul class="tiles">
+          <li class="tile reveal">
+            <a href="https://daraflow.vercel.app/">
+              <span class="tile-icon" aria-hidden="true">D</span>
+              <span class="tile-body">
+                <span class="tile-top"><h3>DaraFlow</h3><span class="mono muted">daraflow.vercel.app ↗</span></span>
+                <p>Invoicing for freelancers, built iOS-first then web. Next.js, Supabase, SwiftUI.</p>
+                <span class="status mono"><span class="dot" aria-hidden="true"></span>Live</span>
+              </span>
+            </a>
+          </li>
+          <li class="tile reveal">
+            <a href="#products">
+              <span class="tile-icon" aria-hidden="true">L</span>
+              <span class="tile-body">
+                <span class="tile-top"><h3>LinkPort</h3><span class="mono muted">App Store soon ↗</span></span>
+                <p>A Mac utility that lets you choose exactly which browser, browser profile, or open browser window should handle a link.</p>
+                <span class="status mono"><span class="dot" aria-hidden="true"></span>In TestFlight</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="group" id="tools">
+        <div class="group-head"><p class="eyebrow mono">Tools for engineers</p><p class="group-intro">Open source, on GitHub. Changing how teams work, not just what they ship.</p></div>
+        <ol class="work-list">
         <li class="work-row reveal">
-          <span class="mono muted">03</span>
-          <h3>Townhall</h3>
-          <p>Founding engineer, then technical lead of six. Took the concept to the Zoom app marketplace and shipped LLM-powered features like smart agendas.</p>
-          <span class="mono muted right">2021 — now</span>
+          <a href="https://github.com/Tyak99">
+            <span class="mono muted">01</span>
+            <h3>PR review that argues with itself</h3>
+            <p>Parallel reviewers, one angle each, then an adversarial verifier that tries to refute every finding. Only survivors reach the human. GitHub and GitLab.</p>
+            <span class="mono muted right">GitHub ↗</span>
+          </a>
         </li>
         <li class="work-row reveal">
-          <span class="mono muted">04</span>
-          <h3>Marks / Hedge Market</h3>
-          <p>Real-time perpetuals trading on Arbitrum. A WebSocket price layer over three feeds, positions, P&amp;L, liquidation monitoring; GMX v2 and Ostium on-chain.</p>
-          <span class="mono muted right">Contract</span>
+          <a href="https://github.com/Tyak99">
+            <span class="mono muted">02</span>
+            <h3>Recall</h3>
+            <p>Cross-session memory for Claude Code. Searches every past transcript and hands the agent a context brief instead of a raw log.</p>
+            <span class="mono muted right">GitHub ↗</span>
+          </a>
         </li>
-        <li class="work-row reveal">
-          <span class="mono muted">05</span>
-          <h3>PR review that argues with itself</h3>
-          <p>Parallel reviewers, one angle each, then an adversarial verifier that tries to refute every finding. Only survivors reach the human. GitHub and GitLab.</p>
-          <span class="mono muted right">Tooling</span>
-        </li>
-        <li class="work-row reveal">
-          <span class="mono muted">06</span>
-          <h3>Recall</h3>
-          <p>Cross-session memory for Claude Code. Searches every past transcript and hands the agent a context brief instead of a raw log.</p>
-          <span class="mono muted right">Open source</span>
-        </li>
-        <li class="work-row reveal">
-          <span class="mono muted">07</span>
-          <h3>DaraFlow</h3>
-          <p>Invoicing for freelancers, built iOS-first then web. Next.js, Supabase, SwiftUI. A solo product, shipped with an agent team working the ticket board.</p>
-          <span class="mono muted right">Side project</span>
-        </li>
-        <li class="work-row reveal">
-          <span class="mono muted">08</span>
-          <h3>Jackocoins</h3>
-          <p>A crypto exchange that started on WhatsApp. We built the mobile, web and admin apps; by 2021 users were moving over ₦50M a day through it.</p>
-          <span class="mono muted right">2020 — 21</span>
-        </li>
-      </ol>
+        </ol>
+      </div>
     </section>
 
     <section class="about section" id="about">
